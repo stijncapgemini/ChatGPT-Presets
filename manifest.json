@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "chatGPT Presets",
+  "name": "ChatGPT-Presets",
   "version": "1.0",
-  "description": "Add presets to openai's chatGPT",
+  "description": "Add presets to openai's ChatGPT",
   "permissions": ["tabs", "storage"],
 
   "background": { "service_worker": "background.js" },
   "action": {
-    "default_title": "Title",
+    "default_title": "ChatGPT-Presets",
     "default_popup": "popup.html"
   },
   "content_scripts": [
