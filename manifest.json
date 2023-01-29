@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "chatGPT Presets",
+  "version": "1.0",
+  "description": "Add presets to openai's chatGPT",
+  "permissions": ["tabs", "storage"],
+
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Title",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "css": ["css/styles.css"],
+      "matches": [
+        "https://chat.openai.com/chat",
+        "https://chat.openai.com/chat/*"
+      ]
+    }
+  ]
+}
